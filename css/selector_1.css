@@ -1,0 +1,36 @@
+/* 형제 선택자 */
+
+.num-2 + li {
+  /* 해당 li 다음 형제 선택 */
+  background: blue;
+}
+
+.num-2 ~ li {
+  /* 해당 li 다음 형제부터 전부 선택 */
+  background: red;
+}
+
+/* 가상 선택자 */
+
+.nth > li:first-child {
+  _background: yellow;
+}
+
+.nth > li:last-child {
+  _background: green;
+}
+
+.nth > li:nth-child(odd) {
+  /* 홀수만 설정 */
+  background: Blue;
+}
+
+.nth > li:nth-child(even) {
+  /* 짝수만 설정 */
+  background: green;
+}
+
+/* 속성 선택자 */
+input[type='text'] {
+  background: #999;
+}
